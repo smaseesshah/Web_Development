@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_4</title>
+</head>
+    <body bgcolor="black" text="white" >
+        <h1 align="center">Lab-4 <br> Create an HTML form to place a shopping order. Use maximum elements and their attributes</h1>
+        <form action="place_order.php" method="post">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <br>
+                Name: <input type="text" name="Name">
+                <br><br>
+                Email: <input type="text" name="Email">
+                <br><br>
+                Phone: <input type="text" name="contact">
+                <br><br>
+                City: <select name="City" id="">
+                    <option value="Peshawar" selected>Peshawar</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Karachi">Karachi</option>
+                </select>
+                <br><br>
+                Address: <input type="text" name="Address">
+            </fieldset>
+            <br><br><br>
+            <fieldset>
+                <br>
+                <legend>Select Product</legend>
+                Product: <select name="Product" id="">
+                    <option value="iPhone" selected>iPhone</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                </select>
+                <br><br>
+                Quantity: <input type="Number" max="10" min="1" value="1">
+                <br><br>
+                Select Color: <br>
+                <input type="radio" name="color" value="Black" checked>Black
+                <br>
+                <input type="radio" name="color" value="White">White
+                <br>
+                <input type="radio" name="color" value="Red">Red
+                <br>
+                <input type="radio" name="color" value="Golden">Golden
+                <br><br>
+                Additional Accessories: <br>
+                <input type="checkbox" name="charger">charger
+                <br>
+                <input type="checkbox" name="back cover">back cover
+                <br>
+                <input type="checkbox" name="airpods">airpods
+                <br>
+                <input type="checkbox" name="smart watch">smart watch
+                <br><br>
+                Delivery Preference Time: 
+                <input type="datetime-local" name="delivery preference date" >
+                <br><br>
+                Payment Method: 
+                <select name="Payment Method" id="">
+                    <option value="cash on delivery" selected>cash on delivery</option>
+                    <option value="Online Transfer">Online Transfer</option>
+                    <option value="Installation">Installation</option>
+                </select>
+                <br><br>
+                Upload Receipt Please: <input type="file" name="receipt" id="">
+                <br><br>
+                <textarea name="customer Additional information" id="" cols="50" placeholder="Additional information"></textarea>
+            </fieldset>
+            <br><br>
+            <input type="submit" name="submitbtn" value="Place Order" id="">
+            <input type="reset" name="resetbtn" value="Clear Form" id="">
+        </form>
+        
+
+
+
+
+    </body>
+</html>
