@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        .space div p{
+            background-color: yellow;
+        }
+        .gt div > p{
+            background-color: lightblue;
+        }
+        .plus div + p{
+            background-color: lightpink;
+        }
+        .tilde div ~ p{
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <nav class="space">
+        <div class="space">
+            <p>this is simple descendent selector</p>
+        </div>
+    </nav>
+    <br>
+    <nav class="gt">
+        <div>
+            <p>this is child selector</p>
+            <nav>
+                <p>this is not the direct child so doesnot take any css styling</p>
+            </nav>
+        </div>
+    </nav>
+    <br>
+    <nav class="plus">
+        <div>
+            <p>this is adjacent sibling selector</p>
+        </div>
+        <p>this will take the css</p>
+        <p>but this will not take the css</p>
+    </nav>
+    <br>
+    <nav class="tilde">
+        <div>
+            <p>
+                this is general sibling selector
+            </p>
+        </div>
+        <p>
+            this will take
+        </p>
+        <p>
+            also this will
+        </p>
+        <b>now i have put some other tag</b>
+        <p>
+            now also i take the css
+        </p>
+    </nav>
+</body>
+</html>

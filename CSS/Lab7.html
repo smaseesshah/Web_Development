@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lab : CSS Selectors and Styles</title>
+  <link rel="stylesheet" href="Lab7.css">
+</head>
+<body>
+  <!-- Header with an ID selector -->
+  <header id="main-header">
+    <h1>Welcome to Lab 7</h1>
+  </header>
+
+  <!-- Navigation using an unordered list (child selector demonstration) -->
+  <nav>
+    <ul class="menu">
+      <li><a class="nodec" href="#about">About</a></li>
+      <li><a class="nodec" href="#services">Services</a></li>
+      <li><a class="nodec" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section using multiple selectors -->
+  <div class="content">
+    <!-- Section: About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello, I'm a web developer with a passion for designing beautiful and functional websites.
+        <span class="highlight">I specialize in front-end development</span> and responsive design.
+      </p>
+    </section>
+    
+    <!-- Section: Services -->
+    <section id="services">
+      <h2>Services</h2>
+      <p>
+        I offer services such as website design, CSS animation, and creating engaging user experiences.
+      </p>
+      <!-- Blockquote to demonstrate general sibling selector -->
+      <blockquote>
+        "Design is not just what it looks like and feels like. Design is how it works." – Steve Jobs
+      </blockquote>
+      <p>
+        The quote above inspires my work every day.
+      </p>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can reach me via email: <a class="nodec" href="mailto:smaseesshah786@gmail.com">smaseesshah786@gmail.com</a>.
+      </p>
+      <p>
+        Visit my professional profile at 
+        <a class="nodec" href="https://www.linkedin.com/in/smaseesshah/" target="_blank">LinkedIn</a>.
+      </p>
+    </section>
+  </div>
+
+  <!-- Footer styled using element selectors -->
+  <footer style="background-color: #333; color: #fff; text-align: center; padding: 15px;">
+    <p>&copy; 2025 My Web Page</p>
+  </footer>
+</body>
+</html>

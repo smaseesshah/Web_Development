@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto; /* Creates two columns */
+        background-color: #0096F3;
+        padding: 10px;
+        }
+
+        .grid-item {
+        background-color: rgb(205, 0, 0);
+        border: 1px solid rgb(0, 0, 150);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Working with Grid and Grid Container</h1>
+    <div class="grid-container">
+      <div class="grid-item">First</div>
+      <div class="grid-item">Second</div>
+      <div class="grid-item">Third</div>
+      <div class="grid-item">Fourth</div>
+    </div>
+  
+    <div class="grid-container">
+      <div class="grid-item">First</div>
+      <div class="grid-item">Second</div>
+      <div class="grid-item">Third</div>
+      <div class="grid-item">Fourth</div>
+      <div class="grid-item">Fifth</div>
+    </div>
+</body>  
+
+</html>

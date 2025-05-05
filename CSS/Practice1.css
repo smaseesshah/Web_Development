@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background-color: cadetblue;
+}
+header,footer{
+    text-transform:uppercase;
+    color:rgb(56, 22, 22);
+    background-color: rgb(205, 232, 169);
+    margin: auto;
+    border: 20px solid black;
+}
+.navbar img{
+    float: right;
+    width: 97px;
+    border: 2px solid black;
+    height: auto;
+}
+.navbar ul{
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar li{
+    margin: 0 10px;
+}
+.navbar a{
+    color: rgb(59, 11, 104);
+}
+.gallery{
+    background-color: rgb(48, 82, 92);
+    margin: 1px;
+    border: 10px solid black;
+    float: left;
+    width: 180px;
+    
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.grid-container table{
+    display: grid;
+    float: left;
+    columns: auto auto;
+    background-color: aquamarine;
+    padding: 10px;
+}
+.grid-container tr{
+    background-color: darkgrey;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.form{
+    float: left;
+}
+.form input[type=text],select{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 10px solid #DDAA00;
+}
+.form input[type=text]:focus{
+    border:5px solid blue; 
+}
+.form input[type=submit], input[type=reset] {
+    width:30%; background:#DDAA00; color:#fff; padding:14px 20px;
+}

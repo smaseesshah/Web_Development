@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Container</title>
+    <style>
+        .myclass {
+            width: 100%;
+            color: red;
+            overflow: auto;}
+        .myclass div {
+            width: 50%;
+            float: left;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="myclass">
+        <div >
+            this is the float at right in the div class container
+        </div>
+        <p>this is part of class but not a div.</p>
+    </div>
+
+    <div class="myclass">
+        <div style="background-color:#40AAA3;">
+          <h2>Left Box</h2>
+          <p>This content is on the left side.</p>
+        </div>
+        <div style="background-color:#FFC0C7;">
+          <h2>Right Box</h2>
+          <p>This content is on the right side.</p>
+        </div>
+      </div>
+
+
+</body>
+</html>

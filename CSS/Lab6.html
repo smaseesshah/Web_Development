@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 6</title>
+  <style type="text/css">
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: darkblue;
+    }
+    .blue {
+      color: blue;
+      font-style: italic;
+    }
+    #special {
+      border: 2px solid red;
+      padding: 10px;
+      margin: 20px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lab 6</h1>
+    <p>Design a webpage and format using all the options of CSS covered in lecture.</p>
+  </header>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  <section id="special">
+    <h2>Section Title</h2>
+    <p class="blue">
+      This paragraph uses a class-based style defined in the internal stylesheet.
+    </p>
+    <!-- Inline style: overrides internal/external styles for this element -->
+    <p style="font-size: 18pt; color: #FF00FF;">
+      This paragraph is styled inline to override other styles.
+    </p>
+    <!-- Example of CSS float applied inline -->
+    <img src="http://www.uop.edu.pk/images/nlogo.png" alt="Example Image" style="float: right; margin: 10px;">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+      Cras venenatis euismod malesuada.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; Lab 6 by Syed Muhammad Asees Shah</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2 {
+    color: darkslateblue;
+  }
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+
+  /* ID SELECTOR: style the header using a unique ID */
+  #main-header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* CLASS SELECTOR: remove underline from links with class 'nodec' */
+  a.nodec {
+    text-decoration: none;
+    color: blue;
+  }
+  /* PSEUDO-CLASS: change link style on hover */
+  a.nodec:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  /* DESCENDANT SELECTOR: style any <span> inside an element with class 'highlight' */
+  .highlight span {
+    font-weight: bold;
+    color: orange;
+  }
+
+  /* CHILD SELECTOR: style only the direct <li> children of elements with class 'menu' */
+  .menu > li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* ADJACENT SIBLING SELECTOR: style a paragraph immediately following a heading */
+  h2 + p {
+    font-style: italic;
+  }
+
+  /* GENERAL SIBLING SELECTOR: style all paragraphs that follow a blockquote */
+  blockquote ~ p {
+    color: green;
+  }
+  
+  /* PSEUDO-ELEMENT SELECTOR: style the first letter of every paragraph */
+  p::first-letter {
+    font-size: 200%;
+    color: darkred;
+  }
+
+  /* PSEUDO-CLASS: change background color when hovering over divs with class 'content' */
+  div.content:hover {
+    background-color: #ddd;
+  }
+  
+  /* ATTRIBUTE SELECTOR: style links that open in a new tab */
+  a[target="_blank"] {
+    background-color: yellow;
+  }
+  /* ATTRIBUTE SELECTOR: style external links that start with 'https' */
+  a[href^="https"] {
+    color: green;
+  }
