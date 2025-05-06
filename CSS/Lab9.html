@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Forms</title>
+  <style>
+    input[type=text], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 10px;
+      border: 10px solid #DDAA00;
+    }
+
+    input[type=text]:focus {
+      border: 5px solid blue;
+    }
+
+    input[type=submit], input[type=reset] {
+      width: 30%;
+      background-color: #DDAA00;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: #0096F3;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: rgb(205, 0, 0);
+      border: 1px solid rgb(0, 0, 150);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
 </head>
-<body bgcolor="black" text="white">
-    <h1 align="center">Lab7: <br>Include javascript in your html web page and show the output of comparison, logical and bitwise operators.
-    </h1>
-    <script>
-        document.write("HelloWorld");
-        document.write("<br>");
-        var x = 10;
-        x++;
-        document.write(x)
-        document.write("<br>");
-        y = "this is ";
-        y += "me Syed Muhammad Asees Shah"
-        document.write(y)
-        document.write("<br>");
+<body>
+  <h3>Using CSS to Style an HTML Form</h3>
+  <div>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
 
-        
-        document.write("<h1>Comparison Operator </h1>");
-        x = 5;
-        y = '5';
-        document.write(x==y);
-        document.write("<br>");
-        document.write(x===y);
-        document.write("<br>");
-        document.write(x>=y);
-        document.write("<br>");
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
 
-        
-        document.write("<h1>Logical Operator </h1>");
-        document.write(x>y || x<y);
-        document.write("<br>");
-        document.write(!(x>y && x<y));
-        document.write("<br>");
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="pakistan">Pakistan</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select><br>
 
-        document.write("<h1>Bitwise Operator </h1>");
-        document.write("<br>");
-        document.write(5&1);
-        document.write("<br>");
-        document.write(5|2);
-        document.write("<br>");
-        document.write(~5);//~x=-(x+1)
-        document.write("<br>");
-        document.write(5^2);
-        document.write("<br>");
-        document.write(5<<1);
-        document.write("<br>");
-        document.write(10>>1);
-        document.write("<br>");
-        document.write(-5>>>1);
-        document.write("<br>");
-        document.write();
-        document.write("<br>");
-        document.write();
-        document.write("<br>");
-        document.write();
-    </script>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <h1>Working with Grid and Grid Container</h1>
+  <div class="grid-container">
+    <div class="grid-item">First</div>
+    <div class="grid-item">Second</div>
+    <div class="grid-item">Third</div>
+    <div class="grid-item">Fourth</div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">First</div>
+    <div class="grid-item">Second</div>
+    <div class="grid-item">Third</div>
+    <div class="grid-item">Fourth</div>
+    <div class="grid-item">Fifth</div>
+  </div>
 </body>
 </html>

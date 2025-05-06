@@ -1,0 +1,50 @@
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #111;
+}
+
+.gallery {
+    margin: 10px;
+    border: 10px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.box-model {
+    width: 300px;
+    border: 20px solid blue;
+    padding: 25px;
+    margin: 20px;
+    background-color: lightgreen;
+    float: left;
+}
+
+/* Wrap sections to float side-by-side */
+.section-wrapper {
+    width: 100%;
+    overflow: auto;
+}
